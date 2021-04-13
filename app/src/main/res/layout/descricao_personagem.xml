@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/nome_personagem_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/azul"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:text="Nome do Personsagem"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/imagem_personagem_descricao"
+        app:layout_constraintStart_toEndOf="@+id/type" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="350dp"
+        android:id="@+id/imagem_personagem_descricao"
+        app:layout_constraintTop_toBottomOf="@+id/nome_personagem_descricao"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:id="@+id/type"
+        android:text="Espécie:"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/imagem_personagem_descricao"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/origin"
+        android:textColor="@color/orange"
+        android:text="Origem:"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/origin_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/species"
+        app:layout_constraintStart_toEndOf="@+id/origin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:id="@+id/status"
+        android:text="Status:"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="07dp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/origin"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_api"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/origin"
+        app:layout_constraintStart_toEndOf="@id/status"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Localização:"
+        android:textColor="@color/orange"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_api"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        app:layout_constraintStart_toEndOf="@+id/location"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/criacao"
+        android:text="Criação:"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/criacao_api"
+        android:fontFamily="cursive"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        app:layout_constraintStart_toEndOf="@+id/criacao"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
